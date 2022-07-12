@@ -28,8 +28,12 @@ html, body {
     height: 1px;
     width: 135px;
     background-color: #f3e8d488;
-    display: block;
-    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 8rem;
     position: relative;
     animation: lineaGral 3s ease;
 }
@@ -138,6 +142,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    align-content: center;
     position: absolute;
     bottom: 11rem;
     margin-left: 5rem;
@@ -834,22 +839,28 @@ html, body {
         background-attachment: fixed;
     }
     
+    .main__height {
+        height: 68vh;
+    }   
+    
     .section_tablaEntradas {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         align-content: center;
-        position: relative;
         margin: auto;
         position: relative;
-        margin-left: 15vw;
     }
 
     th, td {
         width: 220px;
         text-align: left;
         padding-bottom: 20px;
+    }
+    
+    .entradasTabla {
+        margin-left: 8rem;
     }
     
     .entradasTabla__font {
@@ -876,7 +887,17 @@ html, body {
     border: 1px solid #fdf6ec92;
     }
 
-
+    .footerEntradas ul {
+        position: relative;
+        display: flex;  
+        justify-content: center;
+        align-items: center; 
+        list-style: none;
+        width: 100%;
+        height: 60px;   
+        background-color: #3d3c3c84;
+        gap: 18px;
+    }
 
     /* -------------------------------- Fin ENTRADAS Mobile First  --------------------*/
 
@@ -891,9 +912,15 @@ html, body {
             width: 90px;
             padding: 4px;
             height: 26px;
-            font-size: 0.7em;
-            }
-    }     
+            font-size: 0.7em; 
+    }   
+    
+        .main__height {
+            height: 75vh;
+        }   
+}
+
+        /*------------------------------ Fin ENTRADAS Responsive TABLET ---------------------*/
 
         /* ------------------------------- ENTRADAS Responsive DESKTOP  -------------------*/
 
@@ -927,19 +954,11 @@ html, body {
             text-align: left;
             padding-bottom: 20px;
         }
+    
+        .main__height {
+            height: 72.3vh;
+            }    
     }
-
-.footerEntradas {
-    position: relative;
-    display: flex;  
-    justify-content: center;
-    align-items: center; 
-    list-style: none;
-    width: 100%;
-    height: 60px;   
-    background-color: #3d3c3c84;
-    gap: 18px;
-}
 
     /* ---------------------------------  Fin ENTRADAS Responsive Desktop ---------------------------*/
 
@@ -984,7 +1003,7 @@ html, body {
         padding: 5px;
         font-family: 'inter', serif;
         font-weight: 100;
-        font-size: 1.3em;
+        font-size: 1.5em;
         color: #F3E8D4;
         border-radius: 8px; 
     }
@@ -1002,24 +1021,17 @@ html, body {
         gap: 18px;
     }
 
-.linesContacto {
-    height: 1px;
-    width: 135px;
-    background-color: #f3e8d488;
-    display: block;
-    margin-bottom: 7rem;
-    position: relative;
-    animation: lineaGral 3s ease;
+    .formBoton:hover {
+        width: 90px;
+        padding: 5px;
+        font-family: 'inter', serif;
+        font-weight: 100;
+        font-size: 1.5em;
+        color: #F3E8D4;
+        background-color: #f3e8d425;
+        border-radius: 8px;
+    }
 
-}
-
-/*.main__height {
-    height: 72.3vh;
-}
-
-.main__contacto--height {
-    height: 72.3vh;
-}*/
     /*  -------------------------------- Fin CONTACTO Mobile First   ------------------------------------*/
 
     /*  -------------------------------- CONTACTO Responsive Tablet  ------------------------------------*/
@@ -1029,6 +1041,7 @@ html, body {
         .titlesGeneral {
             font-size: 4.5em;
         }
+
         
         .contenedorForm {
         height: 58vh;
@@ -1037,6 +1050,10 @@ html, body {
         @media screen and (min-width:975px) and (max-width: 1800px) {
 
         .formCampos {
+            font-size: 1.9em;
+        }
+
+        .formBoton:hover {
             font-size: 1.9em;
         }
     }
