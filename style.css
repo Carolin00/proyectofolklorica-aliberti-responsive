@@ -622,6 +622,7 @@ html, body {
         margin-top: 90px;
         margin-bottom: 100px;
         gap: 5px;
+        gap: 4px;
     }
     
     .aboutBox1__img {
