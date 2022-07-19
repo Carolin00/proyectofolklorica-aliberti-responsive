@@ -182,7 +182,7 @@ html, body {
 
 .home__title {
     color: #F3E8D4;
-    font-size: 8em;
+    font-size: 7.8em;
     font-family: 'inter', serif;
     font-weight: 600;
     position: absolute;
@@ -622,7 +622,6 @@ html, body {
         margin-top: 90px;
         margin-bottom: 100px;
         gap: 5px;
-        gap: 4px;
     }
     
     .aboutBox1__img {
