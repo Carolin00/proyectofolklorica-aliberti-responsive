@@ -15,7 +15,7 @@ html, body {
     align-items: center;
     flex-direction: column;
     color: #F3E8D4;
-    font-size: 5em;
+    font-size: 3em;
     font-family: 'inter', serif;
     text-align: center;
     font-weight: 100;
@@ -38,24 +38,6 @@ html, body {
     animation: lineaGral 3s ease;
 }
 
-.menuGral {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2rem;
-}
-
-.menuGral {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    position: absolute;
-    top: 4.5rem; 
-    right: 3rem; 
-    z-index: 999999;
-    cursor: pointer;
-}
-
-
 @keyframes lineaGral {
     0% {
         width: 1px;
@@ -77,50 +59,28 @@ html, body {
     background-attachment: fixed;
 }
 
-.menuHome {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 2rem;
-}
-
-.menuHome {
-        display: flex;
-        list-style: none;
-        gap: 20px;
-        position: absolute;
-        top: 4.5rem; 
-        right: 4rem; 
-        z-index: 999999;
-        cursor: pointer;  
-}
-
-.nav li {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    text-align: center;
+.nav {
     font-family: 'inter', serif;
-    font-weight: 600;
-    font-size: 1.1em;
-    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    gap: 10px; 
+    margin-right: 3rem;
+    margin-top: 65px;
+}
+
+.nav-item {
+    color: antiquewhite;
     background-color: #363636;
-    color: #F3E8D4;
-    text-decoration: none;
-    padding: 2px;
 }
 
-.nav a:visited {
-    color: #F3E8D4;
-    text-decoration: none;
-    }
-
-.nav a:hover {
-    font-weight: 300;
+.nav-link {
+    color: antiquewhite;
+    padding: 15px;
 }
 
-.nav a:link {
-    color: #F3E8D4;
-    text-decoration: none;
+.nav-link:hover {
+    color: antiquewhite;
+    font-weight: 600;
 }
 
 .home__title {
@@ -129,6 +89,7 @@ html, body {
     font-family: 'inter', serif;
     position: absolute;
     bottom: 15rem;
+    font-weight: 600;
     left: 5rem;
 }
 
@@ -155,52 +116,23 @@ html, body {
 /* ------------------------------- HOME Responsive Tablet  -------------------------------*/
 
 @media screen and (min-width:571px) and (max-width: 974px) {
-    .menuHome {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 2rem;
+
+.nav {
+        font-size: 30px;
+        gap: 40px; 
+        margin-right: 70px;
+        margin-top: 65px;
     }
     
-    .menuHome {
-        display: flex;
-        list-style: none;
-        gap: 30px;
-        position: absolute;
-        top: 4.5rem; 
-        right: 8rem; 
-        z-index: 999999;
-        cursor: pointer;
+.nav-link {
+        color: antiquewhite;
+        padding: 15px;
     }
-
-    
-.nav li {
-    font-family: 'inter', serif;
-    font-weight: 600;
-    font-size: 2em;
-    text-transform: uppercase;
-    background-color: #363636;
-    color: #F3E8D4;
-    text-decoration: none;
-    padding: 0.1rem;
-}
-
-.nav a:visited {
-    color: #F3E8D4;
-    text-decoration: none;
-    }
-
-.nav a:hover {
-    font-weight: 300;
-}
-
-.nav a:link {
-    color: #F3E8D4;
-    text-decoration: none;
-}
 
 .home__title {
     color: #F3E8D4;
     font-size: 7em;
+    font-weight: 600;
     font-family: 'inter', serif;
     position: absolute;
     bottom: 20rem;
@@ -231,53 +163,28 @@ html, body {
 
 @media screen and (min-width:975px) and (max-width: 1800px) {
 
-    .menuHome {
-        display: flex;
-        justify-content: space-around;
-        padding-top: 2rem;
+
+    .nav {
+        font-size: 15px;
+        gap: 40px; 
+        margin-right: 70px;
     }
     
-    .menuHome {
-        display: flex;
-        list-style: none;
-        gap: 30px;
-        position: absolute;
-        top: 4.5rem; 
-        right: 10rem; 
-        z-index: 999999;
-        cursor: pointer;
+    .nav-link {
+        color: antiquewhite;
+        padding: 7px;
     }
-
     
-.nav li {
-    font-family: 'inter', serif;
-    font-weight: 600;
-    font-size: 2.5em;
-    text-transform: uppercase;
-    background-color: #363636;
-    color: #F3E8D4;
-    text-decoration: none;
-    padding: 0.1rem;
-}
-
-.nav a:visited {
-    color: #F3E8D4;
-    text-decoration: none;
+    .nav-link:hover {
+        color: antiquewhite;
+        font-weight: 600;
     }
-
-.nav a:hover {
-    font-weight: 300;
-}
-
-.nav a:link {
-    color: #F3E8D4;
-    text-decoration: none;
-}
 
 .home__title {
     color: #F3E8D4;
     font-size: 8em;
     font-family: 'inter', serif;
+    font-weight: 600;
     position: absolute;
     bottom: 18rem;
     left: 30rem;
@@ -335,7 +242,7 @@ html, body {
     background-color: #363636;
     color: #F3E8D4;
     text-decoration: none;
-    padding: 2px;
+    padding: 7px;
 }
 
 .navEscuchanos a:visited {
@@ -350,6 +257,7 @@ html, body {
 .navEscuchanos a:link {
     color: #F3E8D4;
     text-decoration: none;
+    padding: 7px;
 }
 
 
@@ -657,7 +565,7 @@ html, body {
                                                 /*          Fin escuchanos         */
 
                 /*    --------------------------    SOBRE NOSOTRXS Desktop    -------------------    */
-
+                
 .gradient__background {
     background: linear-gradient(180deg, rgba(12,13,23,1) 0%, rgba(24,25,47,1) 63%, rgba(78,46,37,1) 100%);
     background-attachment: fixed;
@@ -713,6 +621,7 @@ html, body {
         max-width: 820px;
         margin-top: 90px;
         margin-bottom: 100px;
+        gap: 5px;
         gap: 4px;
     }
     
@@ -736,6 +645,8 @@ html, body {
     /*      -----------------------   SOBRE NOSOTRXS Responsive MOBILE --------------*/
 
     @media screen and (min-width:100px) and (max-width:480px) {
+
+        
         .aboutCards {
             display: grid;
             grid-template-areas: 
@@ -782,6 +693,7 @@ html, body {
     /* ------------------------------  SOBRE NOSOTROS Responsive TABLET ------------------*/
 
     @media screen and (min-width: 450px) and (max-width:760px) {
+        
         .aboutCards {
             display: grid;
             grid-template-areas: 
@@ -829,7 +741,6 @@ html, body {
                                     /*      Fin seccion SOBRE NOSOTRXS     */
 
     /* -----------------------------      ENTRADAS Mobile First       --------------------------*/
-
     .entradas__background {
         background-image: url(./img/banner-home.jpg);   
         background-size: cover;
@@ -839,44 +750,42 @@ html, body {
         background-position: right;
         background-attachment: fixed;
     }
+
+    .table {
+        font-family: 'inter';
+        font-weight: 100;
+        font-size: 12px;
+    }
     
-    .main__height {
-        height: 68vh;
-    }   
-    
-    .section_tablaEntradas {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
+    .table-borderless {
         margin: auto;
-        position: relative;
+        width: 20px;
+        margin-left: 60px;
+    }
+    
+    .text_bold {
+        font-weight: 200;
+        padding: 0;
+        margin: 0;
+        width: 15px;
+        color: antiquewhite;
+        
+    }
+    
+    .text_light {
+        font-weight: 100;
+        color: antiquewhite;
+        width: 80px;
     }
 
-    th, td {
-        width: 220px;
-        text-align: left;
-        padding-bottom: 20px;
-    }
-    
-    .entradasTabla {
-        margin-left: 8rem;
-    }
-    
-    .entradasTabla__font {
-        font-family: 'inter', serif;
-        font-weight: 200;
-        font-size: 2.4em;
-        color: #F3E8D4;
-    }
-    
-    .entradasTabla__date {
-        width: 180px;
+    .text_light--lugar {
+        font-weight: 100;
+        color: antiquewhite;
+        width: 80px;
     }
     
     .entradasTabla__button {
-    width: 87px;
+    width: 70px;
     padding: 3px;
     font-family: 'inter', serif;
     color: #F3E8D4;
@@ -905,20 +814,51 @@ html, body {
     /* ------------------------------- ENTRADAS Responsive TABLET  -------------------*/
     
     @media screen and (min-width:571px) and (max-width: 974px) {
-        .entradasTabla__font {
-            font-size: 3em;
+        .table {
+            font-family: 'inter';
+            font-weight: 100;
+            font-size: 17px;
+            margin-left: 250px;
+        }
+        
+        .table-borderless {
+            width: 600px;
+
+        }
+        
+        .text_bold {
+            font-weight: 200px;
+            padding: 0;
+            margin: 0;
+            width: 20px;
+            color: antiquewhite;
+            
+        }
+        
+        .text_light {
+            font-weight: 100;
+            color: antiquewhite;
+            width: 120px;
         }
 
+        .text_light--lugar {
+            font-weight: 100;
+            color: antiquewhite;
+            width: 170px;
+        }
+        
         .entradasTabla__button {
-            width: 90px;
-            padding: 4px;
-            height: 26px;
-            font-size: 0.7em; 
-    }   
-    
-        .main__height {
-            height: 75vh;
-        }   
+        width: 87px;
+        padding: 3px;
+        font-family: 'inter', serif;
+        color: #F3E8D4;
+        font-weight: 200;
+        height: 24px;
+        font-size: 0.7em;
+        border-radius: 12px;
+        background-color: transparent;
+        border: 1px solid #fdf6ec92;
+        }
 }
 
         /*------------------------------ Fin ENTRADAS Responsive TABLET ---------------------*/
@@ -927,33 +867,50 @@ html, body {
 
     @media screen and (min-width:975px) and (max-width: 1800px) {
 
-        .section_tablaEntradas {
-            margin-left: 0;
+        .table {
+            font-family: 'inter';
+            font-weight: 100;
+            font-size: 17px;
+        }
+        
+        .table-borderless {
+            margin: auto;
+            width: 600px;
+            margin-left: 550px;
+        }
+        
+        .text_bold {
+            font-weight: 200px;
+            padding: 0;
+            margin: 0;
+            width: 20px;
+            color: antiquewhite;
+            
+        }
+        
+        .text_light {
+            font-weight: 100;
+            color: antiquewhite;
+            width: 120px;
         }
 
-        .entradasTabla__font {
-            font-size: 3em;
+        .text_light--lugar {
+            font-weight: 100;
+            color: antiquewhite;
+            width: 170px;
         }
-
+        
         .entradasTabla__button {
-            width: 90px;
-            padding: 4px;
-            height: 26px;
-            font-size: 0.7em;
-            }
-
-        .entradasTabla__date {
-            width: 170px;
-        }
-
-        .entradasTabla__lugar {
-            width: 205px;
-        }
-
-        th, td {
-            width: 170px;
-            text-align: left;
-            padding-bottom: 20px;
+        width: 87px;
+        padding: 3px;
+        font-family: 'inter', serif;
+        color: #F3E8D4;
+        font-weight: 200;   
+        height: 24px;
+        font-size: 0.7em;
+        border-radius: 12px;
+        background-color: transparent;
+        border: 1px solid #fdf6ec92;
         }
     
         .main__height {
@@ -1040,7 +997,7 @@ html, body {
     @media screen and (min-width:571px) and (max-width: 974px) {
 
         .titlesGeneral {
-            font-size: 4.5em;
+            font-size: 3em;
         }
 
         
